@@ -1,0 +1,45 @@
+body {
+    background-color: lightcoral;
+  }
+  
+  div.task-manager {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  label {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #taskInput {
+    font-size: 18px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-width: 3px;
+    border-radius : 20px;
+  }
+  
+  #addTaskBtn,
+  #clearAllBtn {
+    background-color: lightseagreen;
+    width: 120px;
+    height: 40px;
+    color: white;
+    margin: 5px;
+    border: none;
+   border-radius: 20px;
+  }
+  
+  li {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
