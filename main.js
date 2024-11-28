@@ -9,7 +9,16 @@ addTaskBtn.addEventListener('click', () => {
   let task = taskInput.value.trim();
   if (task !== "") {
     let listItem = document.createElement('li');
-    listItem.textContent = `${formattedDate}: ${task}`;
+    let taskText = document.createElement('span');
+    taskText.textContent = `${formattedDate}: ${task}`;
+    let deleteBtn = document.createElement('button');
+    deleteBtn.textContent = "Delete";
+    deleteBtn.classList.add('delete-btn');
+    deleteBtn.addEventListener('click', () => {
+      taskList.removeChild(listItem);
+    });
+    listItem.appendChild(taskText);
+    listItem.appendChild(deleteBtn);
     taskList.appendChild(listItem);
     taskInput.value = "";
   }
